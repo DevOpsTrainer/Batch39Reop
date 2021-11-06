@@ -59,6 +59,21 @@ nestedView("${srcGrp}") {
           }
      println "Creating Dashboard View."
     }
+  listView("All") {
+      jobs {
+        name("${serName}")
+        regex("${serName}_.*_Deploy")
+      }
+      columns {
+        status()
+	name()
+	lastSuccess()
+	lastFailure()
+	lastDuration()
+        buildButton()
+      }
+    println "Creating All View."
+    }
   nestedView("Deploys") {
   views {
       
