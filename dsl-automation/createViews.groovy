@@ -3,7 +3,7 @@ println "-------Starting Views Creation Process--------"
 println ""
 
 def srcGrp = "Applications"
-println "Main View: ${srcGrp}"
+println "Inside Main View: ${srcGrp}"
 
 Properties serviceViews = new Properties()
               File confPropertiesFile = new File("$WORKSPACE/dsl-automation/appViews.properties")
@@ -121,4 +121,4 @@ configure { view ->
   
 }
 println ""
-println "-------End Of IIB Views Creation Process--------"
+println "-------End Of Applications Views Creation Process--------"
