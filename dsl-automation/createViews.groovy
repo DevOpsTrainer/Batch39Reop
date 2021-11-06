@@ -3,7 +3,7 @@ println "-------Starting Views Creation Process--------"
 println ""
 
 def srcGrp = "Applications"
-println "Inside Main View: ${srcGrp}"
+println "Creating Views in: ${srcGrp}"
 
 Properties serviceViews = new Properties()
               File confPropertiesFile = new File("$WORKSPACE/dsl-automation/appViews.properties")
