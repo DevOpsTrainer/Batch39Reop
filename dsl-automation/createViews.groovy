@@ -67,7 +67,7 @@ nestedView("${srcGrp}") {
       def allEnv = Eval.me(iibEnvvironments)
       
         for (def envT : allEnv) {
-          println "Creating ${envT} Environment View."
+          println "Creating ${envT} Env View."
     listView(envT) {
       jobs {
         name("${serName}")
